@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         logo = findViewById(R.id.logo);
 
         YoYo.with(Techniques.ZoomOut)
-                .duration(5000)
+                .duration(10000)
                 .playOn(logo);
 
         Handler handler = new Handler();
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                 }
             }
-        },5000);
+        },1000);
 
     }
 }
